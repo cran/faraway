@@ -1,0 +1,95 @@
+abrasion                Wear on materials according to type, run and
+                        position
+alfalfa                 Effects of seed inoculum, irrigation and shade
+                        on alfalfa yield
+babyfood                Respiratory disease rates of babies fed in
+                        different ways
+beetle                  Beetles exposed to fumigant
+bliss                   Bliss insecticide data
+breaking                Breaking strengths of material by day,
+                        supplier, operator
+cathedral               Cathedral nave heights and lengths in England
+chicago                 Chicago insurance redlining
+chiczip                 Chicago zip codes north-south
+chmiss                  Chicago insurance redlining
+chredlin                Chicago insurance redlining
+clot                    Blood clotting times
+coagulation             Blood coagulation times by diet
+composite               Strength of a thermoplastic composite
+                        depending on two factors
+corrosion               Corrosion loss in Cu-Ni alloys
+Cpplot                  Cp plot
+crap                    Insect damage to wheat varieties
+ctsib                   Effects of surface and vision on balance
+death                   Death penalty by race of victim and defendent
+drugpsy                 Drug treatment of psychiatric patients
+eco                     Ecological regression example
+eggprod                 Treatment and block effects on egg production
+eggs                    Laboratory testing of dried egg fat content
+epilepsy                Seizure rates of epileptics under treatment
+exa                     Non parametric regression test data A
+exb                     Non parametric regression test data B
+faithful                Eruption durations and intervals for Old
+                        Faithful
+fpe                     1981 French Presidential Election
+fruitfly                Longevity of fruiflies depending on sexual
+                        activity and thorax length
+gala                    Species diversity on the Galapagos Islands
+halfnorm                Half Normal Plot
+hormone                 Hormones and Sexual Orientation
+ilogit                  Inverse Logit Transformation
+infmort                 Infant mortality according to income and
+                        region
+irrigation              Agricultural experiment with irrigation
+jsp                     Junior Schools Project
+kanga                   Historic Kangaroos
+leafblotch              Leaf blotch on Barley
+logit                   Logit transformation
+mammalsleep             Sleep in Mammals: Ecological and
+                        Constitutional Correlates
+maxadjr                 Maximum Adjusted R-squared
+meatspec                Meat spectrometry to determine fat content
+melanoma                Melanoma patients categorized by type and
+                        location
+nels88                  Subset of National Education Longitudinal
+                        Study 1988
+oatvar                  Yields of oat varieties planted in blocks
+odor                    Odor of chemical by production settings
+ozone                   Ozone readings in LA
+peanut                  Carbon dioxide effects on peanut oil
+                        extraction
+penicillin              Penicillin yields by block and treatment
+pima                    Diabetes survey on Pima Indians
+pneumo                  Miners suffering from pneumoconiosis
+prostate                Infant mortality according to income and
+                        region
+prplot                  Partial Residual Plot
+pulp                    Brightness of paper pulp depending on shift
+                        operator
+pvc                     Production of PVC by operator and resin
+                        railcar
+qqnorml                 Labeled QQ plot
+rabbit                  Rabbit weight gain by diet and litter
+rats                    Rat survival times by treatment and poison
+resceram                Shape and plate effects on current noise in
+                        resistors
+sat                     School expenditure and test scores from USA in
+                        1994-95
+savings                 Savings rates in 50 countries
+seatpos                 Car seat position depending driver size
+sexab                   Post traumatic stress disorder in abused adult
+                        females
+solder                  Solder skips in circuit board manufacture
+sono                    Sonoluminescence
+speedo                  Speedometer cable shrinkage
+star                    Star light intensities and temperatures
+stat500                 Scores for students in Stat500 class
+strongx                 Strong interaction experiment data
+suicide                 UK suicide data
+teengamb                Study of teenage gambling in Britain
+truck                   Truck leaf spring data
+twins                   Twin IQs from Burt
+uncviet                 UNC student opinion about the Vietnam war
+vif                     vif
+vision                  Vision acuity tests
+wheat                   Insect damage to wheat varieties
