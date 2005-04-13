@@ -1,6 +1,6 @@
 Package: faraway
-Version: 0.8
-Date: 2004-06-14
+Version: 0.8.3
+Date: 2005-04-13
 Author: Julian Faraway <faraway@umich.edu>
 Maintainer: Julian Faraway <faraway@umich.edu>
 Title: Functions and datasets for books by Julian Faraway.
@@ -8,4 +8,4 @@ Description: Books are "Practical Regression and ANOVA in R" on CRAN, "Linear Mo
 Depends: R (>= 1.2.1)
 License: GPL (version 2 or later)
 URL: http://www.stat.lsa.umich.edu/~faraway/book
-Packaged: Tue Jul 27 10:22:46 2004; faraway
+Packaged: Wed Apr 13 12:55:57 2005; faraway
