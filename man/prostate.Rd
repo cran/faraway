@@ -1,6 +1,6 @@
 \name{prostate}
 \alias{prostate}
-\title{Infant mortality according to income and region}
+\title{Prostate cancer surgery}
 \description{The \code{prostate} data frame has 97 rows and 9 columns.
 A study on 97 men with prostate cancer who were due to receive
 a radical prostatectomy.
