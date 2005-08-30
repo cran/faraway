@@ -1,7 +1,7 @@
 \name{turtle}
 \alias{turtle}
 \docType{data}
-\title{ ~~ data name/kind ... ~~}
+\title{Incubation temperature and the sex of turtles}
 \description{
   Incubation temperature and the sex of turtles
 }
