@@ -9,7 +9,7 @@ each day. Another group was given 8 virgin females per day. As an
 additional control the fourth and fifth groups were kept with one or
 eight pregnant females per day.  Pregnant fruitflies will not mate.
 The thorax length of each male was measured as this was known to
-affect longevity.
+affect longevity. One observation in the many group has been lost.
 }
 \usage{
 data(fruitfly)
@@ -25,7 +25,10 @@ This data frame contains the following columns:
     Lifetime in days
   }
   \item{\code{activity}}{
-    Sexual activity group - many, isolated, one, low or high
+    The group: isolated = fly kept solitary, one = fly kept with
+    one pregnant fruitfly, many = fly kept with eight pregnant
+    fruitflies, low= fly kept with one virgin fruitfly, high = fly kept
+    with eight virgin fruitflies.
   }}}
 \source{"Sexual Activity and the Lifespan of Male Fruitflies" by
   L. Partridge and M. Farquhar, Nature, 1981, 580-581}
