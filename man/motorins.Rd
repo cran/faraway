@@ -13,7 +13,7 @@
       year with levels 1: < 1000, 2: 1000-15000, 3: 15000-20000, 4:
       20000-25000, 5: > 25000}
     \item{Zone}{a factor representing geographical area with levels 1:
-      Stockholm, Göteborg, Malmö with surroundings 2: Other large cities
+      Stockholm, Goteborg, Malmo with surroundings 2: Other large cities
       with surroundings 3: Smaller cities with surroundings in southern Sweden
 4: Rural areas in southern Sweden 5: Smaller cities with surroundings in
 northern Sweden 6: Rural areas in northern Sweden 7: Gotland}
