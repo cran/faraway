@@ -1,6 +1,5 @@
 \name{semicond}
 \alias{semicond}
-\non_function{}
 \title{Semiconductor split-plot experiment}
 \description{
     The \code{semicond} data frame has 48 rows and 5 columns.
@@ -27,7 +26,7 @@
     }
 }
 \details{
-  Also found in the SASmixed package
+  Also found in the \code{SASmixed} package
 }
 \source{
     Littel, R. C., Milliken, G. A., Stroup, W. W., and Wolfinger,

@@ -15,7 +15,6 @@
     \item{\code{drug}}{a factor with levels \code{no} \code{yes}}
   }
 }
-}
 \source{
   Helmes E. and Fekken G. (1986) Effects of psychotropic drugs and
   psychiatric illness on vocational aptitude and interest

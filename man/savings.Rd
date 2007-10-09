@@ -23,9 +23,8 @@
     \item{\code{ddpi}}{percent growth rate of dpi}
   }
 }
-
-      
-}
+\details{Now also appears as \code{LifeCycleSavings} in the
+  \code{datasets} package}
 \source{Belsley, D., Kuh. E. and Welsch, R. (1980) "Regression
      Diagnostics" Wiley.
 }

@@ -23,7 +23,6 @@ Pima Indians living near Phoenix.
       diabetes (coded 0 if negative, 1 if positive)}
   }
 }
-}
 \source{ The data may
 be obtained from 
 UCI Repository of machine learning databases at

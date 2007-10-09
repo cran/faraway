@@ -29,6 +29,5 @@
 \source{Adapted from  "Data : A Collection of Problems from Many Fields
   for the Student and Research Worker"  by D. Andrews and A. Herzberg
   published by Springer-Verlag, in 1985}
-}
 \keyword{datasets}
 

@@ -4,7 +4,7 @@
 \title{miltary coups and politics in sub-Saharan Africa}
 \description{
   Data is a subset of a larger study on factors affecting regime
-  stability in Sub-Saharan Africa}
+  stability in Sub-Saharan Africa
 }
 \usage{data(africa)}
 \format{
