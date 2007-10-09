@@ -20,7 +20,6 @@
     \item{\code{hours}}{total number of hours worked}
   }
 }
-}
 \source{
   Chap T. Le (1998) "Applied Categorical Data Analysis" Wiley
 }

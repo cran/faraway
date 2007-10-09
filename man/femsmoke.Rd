@@ -18,7 +18,6 @@
     \item{age}{a factor with agegroup levels \code{18-24} \code{25-34} \code{35-44} \code{45-54} \code{55-64} \code{65-74} \code{75+}}
   }
 }
-}
 \source{
   D. Appleton, J. French, M. Vanderpump (1996) "Ignoring a Covariate: An
   Example of Simpson's Paradox" American Statistician, 50, 340-341
