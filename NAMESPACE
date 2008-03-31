@@ -1,0 +1,11 @@
+export(maxadjr,
+       qqnorml,
+       Cpplot,
+       vif,
+       prplot,
+       halfnorm,
+       logit,
+       ilogit)
+
+S3method(vif, default)    
+S3method(vif, lm)    
