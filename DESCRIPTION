@@ -1,6 +1,6 @@
 Package: faraway
-Version: 1.0.2
-Date: 2007-10-09
+Version: 1.0.3
+Date: 2008-03-31
 Author: Julian Faraway <jjf23@maths.bath.ac.uk>
 Maintainer: Julian Faraway <jjf23@maths.bath.ac.uk>
 Title: Functions and datasets for books by Julian Faraway.
@@ -9,4 +9,4 @@ Depends: R (>= 1.4.1)
 License: GPL 
 URL: http://www.maths.bath.ac.uk/~jjf23/
 LazyData: yes
-Packaged: Tue Oct  9 09:53:43 2007; jjf23
+Packaged: Mon Mar 31 11:46:57 2008; jjf23
