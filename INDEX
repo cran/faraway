@@ -1,5 +1,5 @@
-aatemp                  Annual mean temperatures in Ann Arbor,
-                        Michigan
+Cpplot                  Cp plot
+aatemp                  Annual mean temperatures in Ann Arbor, Michigan
 abrasion                Wear on materials according to type, run and
                         position
 aflatoxin               aflatoxin dosage and liver cancer in lab
@@ -27,13 +27,12 @@ cmob                    Social class mobility from 1971 to 1981 in the
                         UK
 cns                     Malformations of the central nervous system
 coagulation             Blood coagulation times by diet
-composite               Strength of a thermoplastic composite
-                        depending on two factors
+composite               Strength of a thermoplastic composite depending
+                        on two factors
 cornnit                 Corn yields from nitrogen application
 corrosion               Corrosion loss in Cu-Ni alloys
 cpd                     Projected and actual sales of 20 consumer
                         products
-Cpplot                  Cp plot
 ctsib                   Effects of surface and vision on balance
 death                   Death penalty in Florida 1977
 debt                    psychology of debt
@@ -53,11 +52,9 @@ esdcomp                 Complaints about emergency room doctors
 exa                     Non parametric regression test data A
 exb                     Non parametric regression test data B
 eyegrade                grading of eye pairs for distance vision
-faithful                Eruption durations and intervals for Old
-                        Faithful
 fat                     Percentage of Body Fat and Body Measurements
-femsmoke                Mortality due to smoking according age group
-                        in women
+femsmoke                Mortality due to smoking according age group in
+                        women
 fpe                     1981 French Presidential Election
 fruitfly                Longevity of fruiflies depending on sexual
                         activity and thorax length
@@ -71,24 +68,23 @@ hormone                 Hormones and Sexual Orientation
 hprice                  Housing prices in US cities 86-94
 hsb                     Career choice of high school students
 ilogit                  Inverse Logit Transformation
-infmort                 Infant mortality according to income and
-                        region
+infmort                 Infant mortality according to income and region
 irrigation              Agricultural experiment with irrigation
 jsp                     Junior Schools Project
 kanga                   Historic Kangaroos
 lawn                    Cut-off times of lawnmowers
 leafblotch              Leaf blotch on barley
 logit                   Logit transformation
-mammalsleep             Sleep in Mammals: Ecological and
-                        Constitutional Correlates
+mammalsleep             Sleep in Mammals: Ecological and Constitutional
+                        Correlates
 maxadjr                 Maximum Adjusted R-squared
 meatspec                Meat spectrometry to determine fat content
 melanoma                Melanoma by type and location
-motorins                Third party motor insurance claims in Sweden
-                        in 1977
+motorins                Third party motor insurance claims in Sweden in
+                        1977
 neighbor                Questionnaire study of neighborly help
-nels88                  Subset of National Education Longitudinal
-                        Study 1988
+nels88                  Subset of National Education Longitudinal Study
+                        1988
 nepali                  Nepali child heath study
 nes96                   US 1996 national election study
 oatvar                  Yields of oat varieties planted in blocks
@@ -97,12 +93,11 @@ ohio                    Ohio Children Wheeze Status
 orings                  Spache Shuttle Challenger O-rings
 ozone                   Ozone readings in LA
 parstum                 Marijuana and parent alcohol and drug use
-peanut                  Carbon dioxide effects on peanut oil
-                        extraction
+peanut                  Carbon dioxide effects on peanut oil extraction
 penicillin              Penicillin yields by block and treatment
 pima                    Diabetes survey on Pima Indians
-pipeline                NIST data on ultrasonic measurements of
-                        defects in the Alaska pipeline
+pipeline                NIST data on ultrasonic measurements of defects
+                        in the Alaska pipeline
 pneumo                  Pneumonoconiosis in coal miners
 potuse                  Marijuana usage by youth
 prostate                Prostate cancer surgery
@@ -110,8 +105,7 @@ prplot                  Partial Residual Plot
 psid                    Panel Study of Income Dynamics subset
 pulp                    Brightness of paper pulp depending on shift
                         operator
-pvc                     Production of PVC by operator and resin
-                        railcar
+pvc                     Production of PVC by operator and resin railcar
 qqnorml                 Labeled QQ plot
 rabbit                  Rabbit weight gain by diet and litter
 ratdrink                Rat growth weights affected by additives
@@ -147,8 +141,7 @@ uncviet                 UNC student opinions about the Vietnam War
 uswages                 Weekly wages of US male workers in 1988
 vif                     vif
 vision                  Vision acuity tests
-wafer                   resitivity of wafer in semiconductor
-                        experiment
+wafer                   resitivity of wafer in semiconductor experiment
 wavesolder              Defects in a wave soldering process
 wbca                    Wisconsin breast cancer database
 weldstrength            welding strength DOE

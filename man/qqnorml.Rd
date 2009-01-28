@@ -21,14 +21,10 @@ qqnorml(y,main = "Normal Q-Q Plot", xlab = "Theoretical Quantiles",
 }
 \value{none
 }
-\details{
-}
-\references{
-}
-\seealso{
+\seealso{qqnorm
 }
 \examples{
 qqnorml(rnorm(16))
 }
 \author{Julian Faraway}
-\keyword{}
+

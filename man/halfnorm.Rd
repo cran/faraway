@@ -26,14 +26,9 @@
 \value{
   none
 }
-\details{
-}
-\references{
-}
-\seealso{
+\seealso{qqnorm
 }
 \examples{
 halfnorm(runif(10))
 }
 \author{Julian Faraway}
-\keyword{}

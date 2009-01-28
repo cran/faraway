@@ -2,7 +2,7 @@
 \alias{gala}
 \title{Species diversity on the Galapagos Islands}
 \description{There are 30 Galapagos islands and 7 variables in the
-  dataset. The relationship between the number of species of tortoise
+  dataset. The relationship between the number of plant species
   and several geographic variables is of interest. The original
   dataset contained several missing values which have been filled
   for convenience.
@@ -11,7 +11,7 @@
 }
 \format{The dataset contains the following variables
   \describe{
-\item{\code{Species}}{  the number of species of tortoise found on the island}
+\item{\code{Species}}{  the number of plant species found on the island}
 \item{\code{Endemics}}{  the number of endemic species}
 \item{\code{Area}}{  the area of the island (km$^2$)}
 \item{\code{Elevation}}{  the highest elevation of the island (m)}

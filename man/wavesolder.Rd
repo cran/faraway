@@ -6,7 +6,7 @@
   Components are attached to an electronic circuit card assembly by
   a wave-soldering process. The soldering process involves baking and
   preheating the circuit card and then passing it through a solder wave
-  by conveyor. Defect arise during the process. Design is $2^{7-3}$ with
+  by conveyor. Defect arise during the process. Design is \eqn{2^{7-3}} with
   3 replicates.
 }
 \usage{data(wavesolder)}
