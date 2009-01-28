@@ -15,12 +15,6 @@ prplot(g,i)
 }
 \value{none
 }
-\details{
-}
-\references{
-}
-\seealso{
-}
 \examples{
 data(stackloss)
 g <- lm(stack.loss ~ .,stackloss)

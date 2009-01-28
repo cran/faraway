@@ -5,7 +5,7 @@
 \description{
   Data on an experiment
 concerning the production of leaf springs for trucks.
-  A $2^{5-1}$ fractional factorial experiment with 3 replicates was
+  A \eqn{2^{5-1}} fractional factorial experiment with 3 replicates was
   carried out with objective of recommending production settings to
   achieve a free height as close as possible to 8 inches.
 }

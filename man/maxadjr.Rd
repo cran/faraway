@@ -18,11 +18,7 @@ maxadjr(l,best=3)
 \details{
   Requires leaps package
 }
-\references{
-}
 \seealso{leaps()
-}
-\examples{
 }
 \author{Julian Faraway}
 \keyword{regression}

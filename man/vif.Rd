@@ -12,12 +12,6 @@
 }
 \value{variance inflation factors
 }
-\details{
-}
-\references{
-}
-\seealso{
-}
 \examples{
 data(stackloss)
 vif(stackloss[,-4])
@@ -25,4 +19,3 @@ vif(stackloss[,-4])
 #    2.9065     2.5726     1.3336 
 }
 \author{Julian Faraway}
-\keyword{}
