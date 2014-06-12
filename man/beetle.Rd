@@ -1,15 +1,29 @@
 \name{beetle}
 \alias{beetle}
-\title{Beetles exposed to fumigant}
-\description{Example Dataset from "Practical Regression and Anova"
+\docType{data}
+\title{
+Beetles exposed to fumigant
 }
-\usage{data(beetle)
+\description{
+Grain beetles were exposed to ethylene oxide
 }
-\format{See for yourself
-}
-\source{See Reference
-}
-\references{Reference details may be found in "Practical Regression and
-  Anova" by Julian Faraway
+\usage{data(beetle)}
+\format{
+  A data frame with 10 observations on the following 3 variables.
+  \describe{
+    \item{\code{conc}}{concentration of ethylene oxide in mg/l}
+    \item{\code{affected}}{number affected}
+    \item{\code{exposed}}{number exposed}
   }
+}
+\source{
+Busvine (1938)
+}
+\references{
+Collet D. "Modelling Binary Data"
+}
+\examples{
+data(beetle)
+## maybe str(beetle) ; plot(beetle) ...
+}
 \keyword{datasets}

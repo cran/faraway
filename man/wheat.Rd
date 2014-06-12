@@ -1,15 +1,25 @@
 \name{wheat}
 \alias{wheat}
-\title{Insect damage to wheat varieties}
-\description{Example Dataset from "Practical Regression and Anova"
+\docType{data}
+\title{
+Insect damage to wheat by variety
 }
-\usage{data(wheat)
+\description{
+Insect damage to wheat by variety
 }
-\format{See for yourself
-}
-\source{See Reference
-}
-\references{Reference details may be found in "Practical Regression and
-  Anova" by Julian Faraway
+\usage{data(wheat)}
+\format{
+  A data frame with 13 observations on the following 2 variables.
+  \describe{
+    \item{\code{damage}}{a numeric vector}
+    \item{\code{variety}}{a factor with levels \code{A} \code{B} \code{C} \code{D}}
   }
+}
+\source{
+Unknown
+}
+\examples{
+data(wheat)
+## maybe str(wheat) ; plot(wheat) ...
+}
 \keyword{datasets}

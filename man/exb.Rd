@@ -1,15 +1,26 @@
 \name{exb}
 \alias{exb}
-\title{Non parametric regression test data B}
-\description{Example Dataset from "Practical Regression and Anova"
+\docType{data}
+\title{
+Simulated non-parametric regression data
 }
-\usage{data(exb)
+\description{
+True function is f(x)=0
 }
-\format{See for yourself
-}
-\source{See Reference
-}
-\references{Reference details may be found in "Practical Regression and
-  Anova" by Julian Faraway
+\usage{data(exa)}
+\format{
+  A data frame with 256 observations on the following 3 variables.
+  \describe{
+    \item{\code{x}}{input}
+    \item{\code{y}}{response}
+    \item{\code{m}}{true value}
   }
+}
+\source{
+Haerdle, W. (1991). Smoothing Techniques with Implementation in S. New York:Springer.
+}
+\examples{
+data(exa)
+## maybe str(exa) ; plot(exa) ...
+}
 \keyword{datasets}

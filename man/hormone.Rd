@@ -1,15 +1,32 @@
 \name{hormone}
 \alias{hormone}
-\title{Hormones and Sexual Orientation}
-\description{Example Dataset from "Practical Regression and Anova"
+\docType{data}
+\title{
+Hormone concentrations in gay and straight men
 }
-\usage{data(hormone)
+\description{
+Urinary androsterone
+(androgen) and etiocholanolone (estrogen) values were recorded from 26
+healthy males.
 }
-\format{See for yourself
-}
-\source{See Reference
-}
-\references{Reference details may be found in "Practical Regression and
-  Anova" by Julian Faraway
+\usage{data(hormone)}
+\format{
+  A data frame with 26 observations on the following 3 variables.
+  \describe{
+    \item{\code{androgen}}{concentration}
+    \item{\code{estrogen}}{concentration}
+    \item{\code{orientation}}{sexual orientation with levels \code{g} \code{s}}
   }
+}
+\source{
+Margolese, M. (1970). Homosexuality: A new endocrine correlate. Hormones
+and Behavior 1, 151-155.
+}
+\references{
+Hand, D. (1981). Discrimination and Classification. Chichester, UK: Wiley.
+}
+\examples{
+data(hormone)
+## maybe str(hormone) ; plot(hormone) ...
+}
 \keyword{datasets}

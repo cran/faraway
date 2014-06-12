@@ -4,6 +4,7 @@ export(maxadjr,
        vif,
        prplot,
        halfnorm,
+       sumary,
        logit,
        ilogit)
 

@@ -1,7 +1,7 @@
 # Functions for use with Faraway's book
 #
 "maxadjr" <-
-  function (l,best=3) 
+  function (l,best=3)
 # Display the best (3) models from a leaps() object
 {
   i <- rev(order(l$a))
@@ -14,7 +14,7 @@
   m
 }
 "qqnorml" <-
-  function(y,main = "Normal Q-Q Plot", xlab = "Theoretical Quantiles", 
+  function(y,main = "Normal Q-Q Plot", xlab = "Theoretical Quantiles",
     ylab = "Sample Quantiles",...)
 # labeled Q-Q plot
   {
@@ -25,7 +25,7 @@
     text(u,y[i],as.character(1:n)[i])
   }
 "Cpplot" <-
-  function (cp) 
+  function (cp)
 # Construct a Cp plot
 {
   p <- max(cp$size)
@@ -49,7 +49,7 @@ vif.default <- function(object) {
 }
 
 # function from Bill Venables post on R-digest
-vif.lm <- function(object) {       
+vif.lm <- function(object) {
   V <- summary(object)$cov.unscaled
   Vi <- crossprod(model.matrix(object))
         nam <- names(coef(object))
@@ -76,8 +76,8 @@ prplot <- function(g,i)
   invisible()
 }
 "halfnorm" <-
-function (x, nlab = 2, labs = as.character(1:length(x)), ylab = "Sorted Data", 
-            ...) 
+function (x, nlab = 2, labs = as.character(1:length(x)), ylab = "Sorted Data",
+            ...)
 {
   x <- abs(x)
   labord <- order(x)
@@ -89,7 +89,7 @@ function (x, nlab = 2, labs = as.character(1:length(x)), ylab = "Sorted Data",
        type = "n", ...)
   if(nlab < n)
     points(ui[1:(n - nlab)], x[i][1:(n - nlab)])
-  text(ui[(n - nlab + 1):n], x[i][(n - nlab + 1):n], labs[labord][(n - 
+  text(ui[(n - nlab + 1):n], x[i][(n - nlab + 1):n], labs[labord][(n -
                                                               nlab + 1):n])
 }
 # logit and inverse logit
@@ -112,4 +112,22 @@ ilogit <- function(x){
     return(lv)
   }
   exp(x)/(1 + exp(x))
+}
+
+# Essential regression summary (idea from Gelman and Hill)
+sumary <- function(object){
+  digits <- options()$digits
+  summ <- summary (object)
+  sigma.hat <- summ$sigma
+  r.squared <- summ$r.squared
+  coef <- summ$coef[,,drop=FALSE]
+  n <- summ$df[1] + summ$df[2]
+  p <- summ$df[1]
+  if (nsingular <- summ$df[3] - summ$df[1]) cat("\nCoefficients: (", nsingular, " not defined because of singularities)\n", sep = "")
+  printCoefmat(coef,signif.stars=FALSE)
+  cat("\n")
+  cat (paste ("n = ", n, ", p = ", p,
+    ", Residual SE = ", format(round(sigma.hat, digits-2),nsmall=digits-2),
+    ", R-Squared = ", format(round(r.squared, 2)), "\n", sep=""))
+  invisible(summ)
 }
