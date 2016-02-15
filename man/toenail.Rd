@@ -15,8 +15,8 @@
   A data frame with 1908 observations on the following 5 variables.
   \describe{
     \item{\code{ID}}{ID of patient}
-    \item{\code{outcome}}{0=none of mild seperation, 1=moderate or severe }
-    \item{\code{treatment}}{the treatment A or B}
+    \item{\code{outcome}}{0=none or mild seperation, 1=moderate or severe }
+    \item{\code{treatment}}{the treatment A=0 or B=1}
     \item{\code{month}}{time of the visit (not exactly monthly intervals
     hence not round numbers)}
     \item{\code{visit}}{the number of the visit}
@@ -29,9 +29,9 @@ by dermatophytes: A double-blind comparative trial of terbinafine 250
 mg/day versus itraconazole 200 mg/day. Journal of the American Academy of Dermatology, 38, 57-63.
 }
 \references{
-Lesaffre, E. and Spiessens, B. (2001). On the effect of the number of quadrature 
+Lesaffre, E. and Spiessens, B. (2001). On the effect of the number of quadrature
 points in a logistic random-effects model: An example.
-Journal of the Royal Statistical 
+Journal of the Royal Statistical
 Society, Series C, 50, 325-335.
 
 G. Fitzmaurice, N. Laird and J. Ware (2004)

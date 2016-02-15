@@ -1,6 +1,6 @@
-92a3cd2d93d51edaf1859bd59cac1d6e *DESCRIPTION
-66156cab2fdf2e8fc3370f44a032edd2 *NAMESPACE
-6564ee83902f49a3614065f90f684f68 *R/faraway.R
+e9bee0eafbf7bf83ded10f03d0de7962 *DESCRIPTION
+f4f1d5005298468becb7a2d1538726c0 *NAMESPACE
+2a0a6142b8477685b2f2e2a38b6ee71e *R/faraway.R
 55adc9fc32e7ef1a537a35411cca4388 *data/aatemp.rda
 1f6af662ec321adbd8aee60b9a4469c9 *data/abrasion.rda
 cd6d2067b0cbc97f273791727f02671d *data/aflatoxin.rda
@@ -137,6 +137,7 @@ e4cedce31b6a33553475c2abb9fdbb7f *data/uswages.rda
 a29f629ea8e01f8f475c443355e7a1b9 *data/wafer.rda
 28f9bc33be95a629805cbe1d93616c80 *data/wavesolder.rda
 4d0f7dd17a5a84300caf00672218bcdf *data/wbca.rda
+d703c0edc2703247998f06a8d3141117 *data/wcgs.rda
 ba3295be2925b9402ebceee68b8ced50 *data/weldstrength.rda
 1303f4386994758fad7a7b625688b40c *data/wheat.rda
 d9ea38aea17bfcaa14ad2a493f67b124 *data/worldcup.rda
@@ -192,6 +193,7 @@ dadbb74c2412965b0485b1f356ee924b *man/exa.Rd
 777dac0d3f06965915eaf5e7dec4f284 *man/femsmoke.Rd
 a49550fd46d467d0e944ab8d6ee17c77 *man/fortune.Rd
 6bc7a4c2d7053e1d362924c269af55a1 *man/fpe.Rd
+ff21c418deb949e1904a17bd85a36f53 *man/fround.Rd
 3187eb5ff035ce6ae827422a33c95483 *man/fruitfly.Rd
 9a3bf87eaddd098a09306595b5f13772 *man/gala.Rd
 ed28777fcc7b134264383f293611fc93 *man/gammaray.Rd
@@ -203,7 +205,7 @@ fcf92bcd9509f0f0dd689b2e0f56eb52 *man/haireye.Rd
 60221dbc6a3d45217d5de6aee71c5b0a *man/hemoglobin.Rd
 297aae5fbbd01b959863e6986f15aa60 *man/hips.Rd
 bf521a3b2588ca567478cde2809f86d2 *man/hormone.Rd
-1d7a83e7f86f183d58b844d9cddeb917 *man/hprice.Rd
+ec6332249dc83561ee133a8fffea9196 *man/hprice.Rd
 dfa3e7a41cb30a6b515f7744b482728a *man/hsb.Rd
 d00e3b8d1bf1781ac0a3583333f1d340 *man/ilogit.Rd
 5c455a011994bd963524f1801c585b12 *man/infmort.Rd
@@ -223,8 +225,8 @@ fdc2a7ecb8c85f4912cea58f69147897 *man/melanoma.Rd
 84090a82c64345a996899776f94aae06 *man/motorins.Rd
 867ebd3d52959ac56d15a459cf8b11fd *man/neighbor.Rd
 1c37cecb103170f42d9d9a5a9b1d5dc2 *man/nels88.Rd
-e8c07dc902e1fef58a3c0473e072566b *man/nepali.Rd
-09ec9ef152b20937418369ff253c684f *man/nes96.Rd
+09d81ab87087515bd55713023501d42d *man/nepali.Rd
+356dcf2e726921d21fe1a37a8d577038 *man/nes96.Rd
 c96434cf5f0f9a7bd706c93cec999e73 *man/newhamp.Rd
 1b80e5f756d2bf9529a23ef86cfc0be5 *man/oatvar.Rd
 13ae8ea9fa8505d5a0f2dea0f3f3b9db *man/odor.Rd
@@ -235,7 +237,7 @@ ad7cc0111979d6208c68b5036075ca06 *man/parstum.Rd
 a9d660e13b1ad8cdcaffb51e57260549 *man/peanut.Rd
 206494adb3613a5379fa08b7d6485927 *man/penicillin.Rd
 748726de85d96ee452a6d13da40f331f *man/phbirths.Rd
-71349e08b9eb15158eac19e5d91bf53d *man/pima.Rd
+2d34eaf2172704827f4aa8785de2e84f *man/pima.Rd
 8f377405aa41d53cb9f2b7e8e91ebc39 *man/pipeline.Rd
 5299459478ec3dfd505b08ffbd966f6d *man/pneumo.Rd
 5ae760729ba70cd0c2a6665fa6ca5261 *man/potuse.Rd
@@ -245,7 +247,7 @@ eb9d348c0383b5cb01e25b554631f5b9 *man/psid.Rd
 e713648b88c76728efe79683c44ba759 *man/pulp.Rd
 713f9615ca330e58394f460adf666c50 *man/punting.Rd
 5c67f72b9de1a87606e0326dbb7b377d *man/pvc.Rd
-294290722b47b40195b6343cfd69281b *man/pyrimidines.Rd
+626565637d1b96237466635e68458031 *man/pyrimidines.Rd
 135fb0b767912363c9e0581aca0a9597 *man/qqnorml.Rd
 628df42b30b5c274395420cdeda53307 *man/rabbit.Rd
 d4e83ba462071472ffe4807430da83c3 *man/ratdrink.Rd
@@ -270,9 +272,9 @@ be49c214d208fe1df4d4ab3d0cc11b05 *man/speedo.Rd
 51aa6dbc3b82fad331da69a4a7dcdd08 *man/stepping.Rd
 5e552132a4b590750c374cc30a58bf46 *man/strongx.Rd
 2d3a316e147fd959213791fb86506c8b *man/suicide.Rd
-1dedfb49e4b39f13865d66cb9a96a1fd *man/sumary.Rd
+124594b6da98d9b5eee44f80b2297ecd *man/sumary.Rd
 184ef6419989fdcfd21e324080410bd4 *man/teengamb.Rd
-ff91a2f79c62629031e89bfa81fa53de *man/toenail.Rd
+8c8117c5d8e5e791fc8df40ab420a4a3 *man/toenail.Rd
 1c633abb21cf10b574e76f687d577bc7 *man/troutegg.Rd
 fa2e734e61877d21d113489895f612bb *man/truck.Rd
 f5788096ca66749d55c4e4211ad3eb9f *man/turtle.Rd
@@ -285,6 +287,7 @@ d3181501fe8a2f2c21afde321a0b9f9e *man/vif.Rd
 6519d232d3936f9f5b8f7551f11e01e0 *man/wafer.Rd
 9c95c8f8e79f35e74aa87a56459faa45 *man/wavesolder.Rd
 759ff7f41afd67fa26f525157fc6e574 *man/wbca.Rd
+272e6ba465cc8afb79590b6a5fcfbe1f *man/wcgs.Rd
 feddb64d6119f3c61a3959192a0c04bf *man/weldstrength.Rd
 cffc76d05f43952d3c77c93ca8d96bdd *man/wheat.Rd
 3967affe1def260e2988bfc4f951fd82 *man/worldcup.Rd

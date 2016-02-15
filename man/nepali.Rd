@@ -10,8 +10,8 @@ study on Nepalese children.
 \format{
   A data frame with 1000 observations on the following 9 variables.
   \describe{
-    \item{\code{id}}{There is a seven digit code for the child's ID:  2 digits for the panchayat
-  number; 1 digit for the ward within panchayat; 3 digits for the household;
+    \item{\code{id}}{There is a six digit code for the child's ID:  2 digits for the panchayat
+  number; 2 digits for the ward within panchayat; 1 digits for the household;
   1 digit for child within household.}
     \item{\code{sex}}{1 = male; 2 =  female}
     \item{\code{wt}}{Child's weight measured in kilograms}

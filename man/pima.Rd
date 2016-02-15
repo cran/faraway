@@ -24,8 +24,8 @@ Pima Indians living near Phoenix.
   }
 }
 \source{ The data may
-be obtained from 
+be obtained from
 UCI Repository of machine learning databases at
-\url{http://www.ics.uci.edu/\~mlearn/MLRepository.html}
+\url{http://archive.ics.uci.edu/ml/}
 }
 \keyword{datasets}

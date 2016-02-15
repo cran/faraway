@@ -5,6 +5,10 @@
 Activity in pyrimidines
 }
 \description{
+  Structural information on 74 2,4-diamino- 5-(substituted benzyl)
+  pyrimidines used as inhibitors of DHFR in E. coli. There are 3
+  positions where chemical activity occurs and 9 attributes per position
+  leading to 27 total predictors. One predictor had no variability and was removed from the data set.
 26 chemical properties of 74 compounds and an activity level
 }
 \usage{data(pyrimidines)}
@@ -37,12 +41,14 @@ Activity in pyrimidines
     \item{\code{p3.pi.doner}}{measured on a [0,1] scale}
     \item{\code{p3.polarisable}}{measured on a [0,1] scale}
     \item{\code{p3.sigma}}{measured on a [0,1] scale}
-    \item{\code{activity}}{measured on a [0,1] scale}
+    \item{\code{activity}}{log 1/Ki, where Ki is the inhibition constant
+      as experimentally assayed, scaled to [0,1]}
   }
 }
 \source{
-Unknown
-}
+ Jonathan D. Hirst, Ross D. King, Michael J. E. Sternberg (1994) Quantitative structure-activity relationships by neural networks and inductive logic programming. I. The inhibition of dihydrofolate reductase by pyrimidines
+ \url{http://dx.doi.org/10.1007/BF00125375}
+ }
 \examples{
 data(pyrimidines)
 ## maybe str(pyrimidines) ; plot(pyrimidines) ...

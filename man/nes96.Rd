@@ -45,6 +45,6 @@ version. Ann Arbor, MI: University of Michigan, Center for Political
 Studies [producer], 1999. Ann Arbor, MI: Inter-university Consortium for
 Political and Social Research [distributor], 1999.}
 \references{
-  Found at \url{http://www.stat.washington.edu/quinn}
+  Found at \url{http://www.stat.washington.edu/}
 }
 \keyword{datasets}

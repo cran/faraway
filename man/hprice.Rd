@@ -10,7 +10,7 @@ over 9 years from 1986-1994 were collected.
 \format{
   A data frame with 324 observations on the following 8 variables.
   \describe{
-    \item{\code{narsp}}{log average sale price}
+    \item{\code{narsp}}{natural log average sale price in thousands of dollars}
     \item{\code{ypc}}{average per capita income}
     \item{\code{perypc}}{percentage growth in per capita income}
     \item{\code{regtest}}{Regulatory environment index (high values = more regulations)}
