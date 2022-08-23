@@ -1,5 +1,32 @@
-# Functions for use with Faraway's book
-#
+## Faraway package functions
+#' @import methods
+NULL
+#' @importFrom lme4 getME isREML refitML VarCorr
+NULL
+#'
+#' @importFrom nlme fixef ranef
+NULL
+#'
+#' @importFrom graphics abline points text
+NULL
+#'
+#' @importFrom stats AIC coef deviance lm logLik model.matrix pnorm printCoefmat qnorm vcov
+NULL
+#' Maximum Adjusted R-squared
+#'
+#' Displays the best models from a leaps object
+#'
+#' Requires leaps package
+#'
+#' @name maxadjr
+#' @param l A leaps object returned from leaps()
+#' @param best An optional argument specify the number of models to be returned
+#' taking the default value of 3
+#' @return A list of the best models
+#' @author Julian Faraway
+#' @seealso leaps()
+#' @keywords regression
+#' @export maxadjr
 "maxadjr" <-
   function (l,best=3)
 # Display the best (3) models from a leaps() object
@@ -13,6 +40,24 @@
 #  dimnames(m) <- list(NULL,c("Adj R^2","Model"))
   m
 }
+#' Labeled QQ plot
+#'
+#' Makes a labeled QQ plot
+#'
+#' @name qqnorml
+#' @param y A numeric vector
+#' @param main main label
+#' @param xlab x-axis label
+#' @param ylab y-axis label
+#' @param ... arguments passed to plot()
+#' @return none
+#' @author Julian Faraway
+#' @seealso qqnorm
+#' @examples
+#'
+#' qqnorml(rnorm(16))
+#'
+#' @export qqnorml
 "qqnorml" <-
   function(y,main = "Normal Q-Q Plot", xlab = "Theoretical Quantiles",
     ylab = "Sample Quantiles",...)
@@ -24,6 +69,19 @@
     plot(u,y[i],xlab=xlab,ylab=ylab,main=main,type="n")
     text(u,y[i],as.character(1:n)[i])
   }
+#' Cp plot
+#'
+#' Makes a Cp plot
+#'
+#' Requires leaps package
+#'
+#' @name Cpplot
+#' @param cp A leaps object returned from leaps()
+#' @return none
+#' @author Julian Faraway
+#' @seealso leaps()
+#' @keywords regression
+#' @export Cpplot
 "Cpplot" <-
   function (cp)
 # Construct a Cp plot
@@ -35,9 +93,38 @@
   text(cp$size[i],cp$Cp[i],labels[i])
   abline(0,1)
 }
-vif <- function(object)
-UseMethod("vif")
 
+
+
+
+
+
+
+
+#' vif
+#'
+#' Computes the variance inflation factors
+#'
+#' @title vif
+#' @aliases vif vif.default vif.lm
+#' @param object a data matrix (design matrix without intercept) or a model
+#' object
+#' @return variance inflation factors
+#' @author Julian Faraway
+#' @examples
+#'
+#' data(stackloss)
+#' vif(stackloss[,-4])
+#' #  Air.Flow Water.Temp Acid.Conc.
+#' #    2.9065     2.5726     1.3336
+#'
+#' @export
+vif <- function(object){
+  UseMethod("vif")
+}
+#' @rdname vif
+#' @method vif default
+#' @export
 vif.default <- function(object) {
   if(!is.data.frame(object) & !is.matrix(object)) stop("Not matrix or data frame")
   if(is.data.frame(object)) object <- as.matrix(object)
@@ -47,9 +134,12 @@ vif.default <- function(object) {
   for(i in 1:ncols) v[i] <- 1/(1-summary(lm(object[,i]~object[,-i]))$r.squared)
   v
 }
-
-# function from Bill Venables post on R-digest
+#' @rdname vif
+#' @method vif lm
+#' @export
 vif.lm <- function(object) {
+  if (any(is.na(coef(object))))
+    stop("Model has non-identifable parameters")
   V <- summary(object)$cov.unscaled
   Vi <- crossprod(model.matrix(object))
         nam <- names(coef(object))
@@ -65,6 +155,29 @@ vif.lm <- function(object) {
         structure(v1*v2, names = nam)
 }
 
+
+
+
+
+
+
+#' Partial Residual Plot
+#'
+#' Makes a Partial Residual plot
+#'
+#' @name prplot
+#' @param g An object returned from lm()
+#' @param i index of predictor
+#' @return none
+#' @author Julian Faraway
+#' @keywords regression
+#' @examples
+#'
+#' data(stackloss)
+#' g <- lm(stack.loss ~ .,stackloss)
+#' prplot(g,1)
+#'
+#' @export prplot
 prplot <- function(g,i)
 {
 # Partial residuals plot for predictor i
@@ -75,6 +188,32 @@ prplot <- function(g,i)
   abline(0,g$coeff[i+1])
   invisible()
 }
+
+
+
+
+
+
+
+
+#' Half Normal Plot
+#'
+#' Makes a half-normal plot
+#'
+#'
+#' @param x a numeric vector
+#' @param nlab number of points to label
+#' @param labs labels for points
+#' @param ylab label for Y-axis
+#' @param ... arguments passed to plot()
+#' @return none
+#' @author Julian Faraway
+#' @seealso qqnorm
+#' @examples
+#'
+#' halfnorm(runif(10))
+#'
+#' @export halfnorm
 "halfnorm" <-
 function (x, nlab = 2, labs = as.character(1:length(x)), ylab = "Sorted Data",
             ...)
@@ -93,6 +232,29 @@ function (x, nlab = 2, labs = as.character(1:length(x)), ylab = "Sorted Data",
                                                               nlab + 1):n])
 }
 # logit and inverse logit
+
+
+
+
+
+
+
+
+#' Logit transformation
+#'
+#' Computes the logit transformation
+#'
+#' x <=0 or >=1 will return NA
+#'
+#' @param x a numeric vector
+#' @return log(x/(1-x))
+#' @author Julian Faraway
+#' @seealso ilogit
+#' @examples
+#' logit(c(0.1,0.5,1.0,1.1))
+#' #[1] -2.197225  0.000000        NA        NA
+#'
+#' @export logit
 logit <- function(x){
   if(any(omit <- (is.na(x) | x <=0 | x >= 1))){
     lv <- x
@@ -103,6 +265,29 @@ logit <- function(x){
   }
   log(x/(1-x))
 }
+
+
+
+
+
+
+
+
+#' Inverse Logit Transformation
+#'
+#' Computes the inverse logit transformation
+#'
+#'
+#' @param x a numeric vector
+#' @return exp(x)/(1+exp(x))
+#' @author Julian Faraway
+#' @seealso logit
+#' @examples
+#'
+#' ilogit(1:3)
+#' #[1] 0.7310586 0.8807971 0.9525741
+#'
+#' @export ilogit
 ilogit <- function(x){
   if(any(omit <- is.na(x))){
     lv <- x
@@ -114,14 +299,45 @@ ilogit <- function(x){
   exp(x)/(1 + exp(x))
 }
 
-# Essential regression summary (idea from Gelman and Hill)
 
-if (!isGeneric("sumary")) {
-    setGeneric("sumary",
+
+#' Abbreviated Regression Summary
+#'
+#' Generic summaries for lm, glm and mer objects
+#'
+#' This generic function provides an abbreviated regression output containing
+#' the more useful information. Users wanting to see more are advised to use
+#' \code{summary()}
+#'
+#' @name sumary
+#' @docType methods
+#' @aliases sumary sumary,lm-method sumary,glm-method sumary,merMod-method sumary,sumary-methods sumary
+#' @param object An lm, glm or mer object returned from lm(), glm() or lmer()
+#' respectively
+#' @param ... further arguments passed to or from other methods.
+#' @return returns the same as \code{summary()}
+#' @author Julian Faraway
+#' @seealso \code{\link[base]{summary}}, \code{\link[stats]{lm}},
+#' \code{\link[stats]{glm}}, \code{\link[lme4]{lmer}}
+#' @references This function is adapted from the \code{display()} function in
+#' the \code{arm} package
+#' @keywords regression
+#' @examples
+#'
+#' data(stackloss)
+#' object <- lm(stack.loss ~ .,stackloss)
+#' sumary(object)
+#'
+#' @exportMethod  sumary
+setGeneric("sumary",
                function(object, ...)
                standardGeneric("sumary"))
-}
 
+
+#'
+#' @docType methods
+#' @rdname sumary-methods
+#' @export
 setMethod("sumary", signature(object = "lm"),
     function(object)
     {
@@ -142,6 +358,9 @@ setMethod("sumary", signature(object = "lm"),
     }
 )
 
+#' @docType methods
+#' @rdname sumary-methods
+#' @export
 setMethod("sumary", signature(object = "glm"),
     function(object, dispersion=NULL)
     {
@@ -163,19 +382,15 @@ setMethod("sumary", signature(object = "glm"),
   }
 )
 
-# This one taken from the arm package. Edited out the model printing.
-
+#' @docType methods
+#' @rdname sumary-methods
+#' @export
 setMethod("sumary", signature(object = "merMod"),
     function(object, digits=2, detail=FALSE)
     {
     out <- NULL
     out$call <- object@call
-    #print (out$call)
-    #object <- summary(object)
-    #summ <- summary(object)
     fcoef <- fixef(object)
-    #coefs <- attr(summ, "coefs")
-    #useScale <- attr (VarCorr (object), "sc")
     useScale <- getME(object, "devcomp")$dims["useSc"]
     corF <- vcov(object)@factors$correlation
     coefs <- cbind(fcoef, corF@sd)
@@ -227,11 +442,42 @@ setMethod("sumary", signature(object = "merMod"),
     }
 )
 
-# Taken from arm package
 
+
+
+
+
+
+
+
+
+#' Formating the Rounding of Numbers
+#'
+#' \code{fround} rounds the values in its first argument to the specified
+#' number of decimal places with surrounding quotes.
+#'
+#' \code{pfround} rounds the values in its first argument to the specified
+#' number of decimal places without surrounding quotes.
+#'
+#'
+#' @aliases fround pfround
+#' @param x a numeric vector.
+#' @param digits integer indicating the precision to be used.
+#' @author Andrew Gelman; Yu-Sung Su
+#' @seealso \code{\link{round}}
+#' @references Copied from the \code{arm} package
+#' @keywords manip print
+#' @examples
+#'
+#'     x <- 3.1415926
+#'     fround(x, digits=2)
+#'     pfround(x, digits=2)
+#'
+#' @export fround
 fround <- function (x, digits) {
     format (round (x, digits), nsmall=digits)
 }
+#' @export pfround
 pfround <- function (x, digits) {
     print (fround (x, digits), quote=FALSE)
 }
