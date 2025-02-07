@@ -1,9 +1,10 @@
-754f918859860eb71083454b22e68e36 *DESCRIPTION
-e0ba7996ac9557a1675eb11fda9cabcf *NAMESPACE
-ec43082b5c5d3739e473c6c195e174e9 *NEWS
-01d0ed7fd5aabf3412aa0b0ec5a36311 *R/faraway-package.R
-caeb3275a679693edefc318ee7a4d158 *R/faraway.R
-0c6ad5b3446721162c89589e8077ab1c *build/partial.rdb
+7e5462cd342c87dbeaf9645b89ee347a *DESCRIPTION
+6aea67b478f4bdf84b11c301f3cf12ea *NAMESPACE
+d9685dc771e68cde3636b1833ca2daa3 *NEWS
+828f7ee6723cdde98ab8a453154c5e1e *R/faraway-package.R
+9d5949d2fd5c60d180ecfcd8a0743ca5 *R/faraway.R
+6aa861bef4545bff8e0f2b5690d7a4cd *README.md
+76161b65639451c966be75488458b3c3 *build/partial.rdb
 55adc9fc32e7ef1a537a35411cca4388 *data/aatemp.rda
 1f6af662ec321adbd8aee60b9a4469c9 *data/abrasion.rda
 cd6d2067b0cbc97f273791727f02671d *data/aflatoxin.rda
@@ -72,12 +73,13 @@ ba8abc62283caa63134658425bd2e210 *data/infmort.rda
 a4e0bfa827bf8c9c67db21921c7c159b *data/insulgas.rda
 b17c4682c0968b0c647f1be2e89e9a34 *data/irrigation.rda
 0e11275ddd7680b0d1e1e505095d0691 *data/jsp.rda
-bba4820e778f0e8ce30f232d5e4edb6b *data/kanga.rda
+c8b998a19f22cad0eb742d87cade50d5 *data/kanga.rda
 aa16ea2f730c22a976cfd4406834bb9c *data/lawn.rda
 ec5e47163ddc0215b3f80bc1dce3e225 *data/leafblotch.rda
 d86e8caa8b9bd6e78382ed813be4f988 *data/leafburn.rda
 e3883d16cc8c51abdfaa387200acd64f *data/mammalsleep.rda
 97c61bcddcf2bd4e5b451db319e4c33e *data/manilius.rda
+fe131c4f665d5705e029a6ed54003744 *data/mba.rda
 bab3efaedfe6f14d37d15ca9b34a159d *data/meatspec.rda
 da24330dc4ef733706a323ab38c76c24 *data/melanoma.rda
 19e088ac549fa68a5164e7dbc4331182 *data/motorins.rda
@@ -119,6 +121,7 @@ b85637d000f33eb0ff6a6f497f73d94e *data/semicond.rda
 9ec2d0c94bbda35261ef3b243abe47cc *data/sexfun.rda
 cdce084d2e1241a34a831557fea3eeb8 *data/snail.rda
 575af0647ec0fec2291d7abba2c99a92 *data/solder.rda
+85ef7e17a4649979af58857ae622ec00 *data/solv.rda
 410ca4c3e4dd428ecdd18a1905dd1c3b *data/sono.rda
 027ea938d78752d86b0e84070bbced66 *data/soybean.rda
 6db38e86be97776d46355f58f9db0e17 *data/spector.rda
@@ -143,9 +146,11 @@ a29f629ea8e01f8f475c443355e7a1b9 *data/wafer.rda
 4d0f7dd17a5a84300caf00672218bcdf *data/wbca.rda
 c2bf1f21246ab10e57ab2e85d9a5dcda *data/wcgs.rda
 ba3295be2925b9402ebceee68b8ced50 *data/weldstrength.rda
+049040ab70c198c845280fcab2ea5186 *data/wfat.rda
 1303f4386994758fad7a7b625688b40c *data/wheat.rda
 d9ea38aea17bfcaa14ad2a493f67b124 *data/worldcup.rda
 966c431a077f604732c07aac86e4acdf *man/Cpplot.Rd
+ef315651ddccbdf472b14b83e34773b2 *man/VarCorrmat.Rd
 25d1a02547edb18f0844a34bd4fc78e6 *man/aatemp.Rd
 10c9567e18d36a1b68e3b67e3b392c55 *man/abrasion.Rd
 96fe4884dd944413b977d20905c7295e *man/aflatoxin.Rd
@@ -178,7 +183,7 @@ be6e402e22b901a7944fe02643c81d67 *man/coagulation.Rd
 6a6bb368640b327ffc30b54cdef7c450 *man/crawl.Rd
 1e90a323531c9f3af65cd68b17af0d28 *man/ctsib.Rd
 e42a396355e354d05cf46565b5724fff *man/death.Rd
-088f91f322dcfd9f2f36335878d0c661 *man/debt.Rd
+feca9819dcb373820db5a094ee3b28c1 *man/debt.Rd
 19ef1b83a42688f0f4936ba1ffdf22b6 *man/denim.Rd
 b6a4f3b30e57acb73f0c4e42f3275236 *man/diabetes.Rd
 71cb8fe94b72d3929d7319c595c6ec7a *man/dicentric.Rd
@@ -193,7 +198,7 @@ be92bccac8bfbb02e3a54819b461c64e *man/eggprod.Rd
 8f85b48c6184be62cdf1aac0bd1d2575 *man/exa.Rd
 c65a698e1861ecc5e99e126560bd37a1 *man/exb.Rd
 8262d3368dab92304690ca804f680f08 *man/eyegrade.Rd
-0cc85ed1fea29ba324f38c54731ce550 *man/fat.Rd
+d111129e545adbefc8e1f26a1788ca98 *man/fat.Rd
 4ff4053a1789a95b554edcd767b0a643 *man/femsmoke.Rd
 27f3d07e17a2a479d119233b1115d2d3 *man/fortune.Rd
 1cb5640a9b423e21d069472b7d33298c *man/fpe.Rd
@@ -206,7 +211,7 @@ da4454871e0dcc00718c8fa9774f5f7b *man/gavote.Rd
 a349b0d57a4593e7e215a7edf3d8e260 *man/globwarm.Rd
 7cd338120bc105640fcebc0d522ac42b *man/haireye.Rd
 252813f0b76ad7d056511138bcc7d4cd *man/halfnorm.Rd
-39b2376cea554b4775b899fe8ae679a9 *man/happy.Rd
+d44b4c5501ab6e8a145883d8c1404ad0 *man/happy.Rd
 25faf588a720dc1770e98efdcd182e6d *man/hemoglobin.Rd
 edce7e20fb588e3bfcf0d658eb65c614 *man/hips.Rd
 b717f3d1318e09ba84926e6eadc3dcdf *man/hormone.Rd
@@ -217,7 +222,7 @@ a622eb2983f0577981fc0dde1ea22573 *man/infmort.Rd
 dc107fa1f6b367aeef5184a35e97d542 *man/insulgas.Rd
 5c49eefd5e52cbd75e131b08a078a381 *man/irrigation.Rd
 a942e73dbddbf5c20473a932708827c2 *man/jsp.Rd
-429dcb43c927ebbe02cd5349673ffcc6 *man/kanga.Rd
+62a7a1552d7a28ab008d1673caa6443b *man/kanga.Rd
 1a923928e03e05cd5f39f97e7078dd21 *man/lawn.Rd
 33851471d892b663378ebe40c0c964b7 *man/leafblotch.Rd
 3773d6ae33c2c396ebcd9c04c6f9914f *man/leafburn.Rd
@@ -268,6 +273,7 @@ f6ca8cbbc6b7a7953d8fab48a9a58912 *man/seeds.Rd
 53c71e32583448b6de5828748f409db5 *man/sexfun.Rd
 273cb43c07b664808648a71515bbb397 *man/snail.Rd
 c798ace02e9f5777dbd9b964fdc5a35c *man/solder.Rd
+8c19bb3ba55febebd351bf82e9865906 *man/solv.Rd
 a042197ffb0c2012d7b2241b462f18ce *man/sono.Rd
 19d6ed34d1f7a11591576f5292d9b014 *man/soybean.Rd
 f121f007ee89c8b420dcef6a81e27d19 *man/spector.Rd
@@ -294,5 +300,6 @@ a3e790943a70ec8f48da5e3f78af8726 *man/vision.Rd
 ed526a0882a89929849c0ffca362164f *man/wbca.Rd
 daa24effdc440136cc9090166d700d7c *man/wcgs.Rd
 c341507e2649290f3a4221f451ea7da2 *man/weldstrength.Rd
+b129274cab8328681c1c7201ec5b679f *man/wfat.Rd
 427ae68adcb970aace93c51fc22f349c *man/wheat.Rd
 bed9e6c9d1b5b70fe611183618c3703a *man/worldcup.Rd

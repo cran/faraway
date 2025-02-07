@@ -854,7 +854,7 @@ NULL
 #' of control scale (high values=internal)} \item{prodebt}{score on a scale of
 #' attitudes to debt (high values=favourable to debt} }
 #' @source Lea, Webley & Walker, 1995, Journal of Economic Psychology, 16,
-#' 181-201 Data obtained from \url{http://people.exeter.ac.uk/SEGLea/}.
+#' 181-201 Data obtained from \url{http://au.exeter.ac.uk/SEGLea/}.
 #' @keywords datasets
 NULL
 
@@ -1265,7 +1265,7 @@ NULL
 
 
 
-#' Percentage of Body Fat and Body Measurements
+#' Percentage of Body Fat and Body Measurements in Men
 #'
 #' Age, weight, height, and 10 body circumference measurements are recorded for
 #' 252 men. Each man's percentage of body fat was accurately estimated by an
@@ -1294,10 +1294,6 @@ NULL
 #' @source Johnson R. Journal of Statistics Education v.4, n.1 (1996)
 #' @keywords datasets
 NULL
-
-
-
-
 
 #' Mortality due to smoking according age group in women
 #'
@@ -1596,11 +1592,7 @@ NULL
 #' @keywords datasets
 NULL
 
-
-
-
-
-#' love, work and happiness
+#' MBA students experience love, sex, work and happiness
 #'
 #' Data were collected from 39 students in a University of Chicago MBA class
 #'
@@ -1618,9 +1610,8 @@ NULL
 #' @keywords datasets
 NULL
 
-
-
-
+#' @rdname happy
+"mba"
 
 #' Treatment of insulin dependent diabetic children
 #'
@@ -1907,7 +1898,7 @@ NULL
 #' \item{lacrymal.width}{a numeric vector}
 #' \item{zygomatic.width}{a numeric vector}
 #' \item{orbital.width}{a numeric vector}
-#' \item{.rostral.width}{a numeric vector}
+#' \item{rostral.width}{a numeric vector}
 #' \item{occipital.depth}{a numeric vector}
 #' \item{crest.width}{a numeric vector}
 #' \item{foramina.length}{a numeric vector}
@@ -3213,7 +3204,26 @@ NULL
 #'
 NULL
 
-
+#' Block design task testing child ability
+#' 
+#' Behavioural scientists at Macquarie University conducted an
+#' experiment to test the time taken to perform a block design task with
+#' 24 fifth grade children (12 boys and 12 girls).
+#'
+#' @name solv
+#' @docType data
+#' @format A data frame with 24 observations and 3 variables.
+#' \describe{
+#' \item{group}{Solution attempted first by row(r) or corner(c)}
+#' \item{time}{Time taken to complete the task in seconds}
+#' \item{eft}{Score on the embedded figures test which is a 
+#' measure of difficulty in abstracting logical structure of 
+#' a problem from its context.}
+#' }
+#' @source Statistical Modelling in GLIM (1989) 
+#' M. Aitkin and D. Anderson and B. Francis and J. Hinde
+#' Oxford University Press
+NULL
 
 
 
@@ -3883,7 +3893,45 @@ NULL
 #' @keywords datasets
 NULL
 
-
+#' Percentage of Body Fat and Body Measurements in Women
+#'
+#' Age, weight, height, and 10 body circumference measurements are recorded for
+#' 184 women. Each woman's percentage of body fat was accurately estimated by an
+#' underwater weighing technique.
+#'
+#'
+#' @name wfat
+#' @docType data
+#' @format A data frame with 184 observations on the following 19 variables.
+#' \describe{ 
+#' \item{siri}{ Percent body fat using Siri's equation} 
+#' \item{weight}{ Weight (lbs)}
+#' \item{height}{ Height (inches)} 
+#' \item{bmi}{Body Mass Index}
+#' \item{age}{ Age (yrs)} 
+#' \item{neck}{ Neck circumference (cm)} 
+#' \item{chest}{ Chest circumference (cm)} 
+#' \item{calf}{Calf circumference (cm)}
+#' \item{biceps}{ Extended biceps circumference (cm)} 
+#' \item{hip}{Hip circumference (cm)} 
+#' \item{abdom}{Horizontal minimal measurement, at the end of a normal expiration (cm)}
+#' \item{forearm}{Forearm circumference (cm)}
+#' \item{thigh}{(Proximal Thigh) Horizontal measurement immediately 
+#' distal to the gluteal furrow (cm)}
+#' \item{mthigh}{(Middle Thigh) Measurement midway between the midpoint 
+#' of the inguinal crease and the proximal border of the patella (cm)}
+#' \item{dthigh}{(Distal Thigh) Measurement proximal to the femoral epicondyles (cm)}
+#' \item{wrist}{Wrist circumference (cm) distal to the styloid processes} 
+#' \item{knee}{Knee circumference (cm)} 
+#' \item{elbow}{A minimal circumference measurement with the elbow extended (cm)}
+#' \item{ankle}{Ankle circumference (cm)} }
+#' @source Roger W. Johnson (2021): Fitting Percentage of Body Fat to Simple Body 
+#' Measurements: College Women, Journal of Statistics and Data Science Education, 
+#' DOI: 10.1080/26939169.2021.1971585 (Note that I have changed some
+#' of the variable names to correspond with the older fat data for men)
+#' @seealso \code{\link{fat}}
+#' @keywords datasets
+NULL
 
 
 

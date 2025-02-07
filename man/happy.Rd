@@ -3,7 +3,8 @@
 \docType{data}
 \name{happy}
 \alias{happy}
-\title{love, work and happiness}
+\alias{mba}
+\title{MBA students experience love, sex, work and happiness}
 \format{
 A data frame with 39 observations on the following 5 variables.
 \describe{ \item{happy}{Happiness on a 10 point scale where 10 is most
@@ -11,10 +12,15 @@ happy} \item{money}{family income in thousands of dollars} \item{sex}{1 =
 satisfactory sexual activity, 0 = not} \item{love}{1 = lonely, 2 = secure
 relationships, 3 = deep feeling of belonging and caring} \item{work}{5 point
 scale where 1 = no job, 3 = OK job, 5 = great job} }
+
+An object of class \code{data.frame} with 39 rows and 5 columns.
 }
 \source{
 George and McCulloch (1993) "Variable Selection via Gibbs Sampling"
 JASA, 88, 881-889
+}
+\usage{
+mba
 }
 \description{
 Data were collected from 39 students in a University of Chicago MBA class
